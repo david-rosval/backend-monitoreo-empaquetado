@@ -57,7 +57,7 @@ function sendNotification(title, body) {
       title,
       body,
     },
-    topic: process.env.MQTT_TOPIC, 
+    topic: process.env.MESSAGING_TOPIC, 
   };
 
   admin
