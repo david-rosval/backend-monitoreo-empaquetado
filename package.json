@@ -1,0 +1,19 @@
+{
+  "name": "backend-monitoreo-empaquetado",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "firebase-admin": "^13.0.1",
+    "mqtt": "^5.10.3"
+  }
+}
