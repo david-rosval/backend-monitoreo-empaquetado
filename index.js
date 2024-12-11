@@ -1,15 +1,5 @@
 import mqtt from 'mqtt'; // Librería MQTT
 import admin from 'firebase-admin'; // Firebase Admin SDK
-import dotenv from 'dotenv'; // Manejo de variables de entorno
-//import fs from 'node:fs'; // Manejo de archivos
-
-// Cargar variables de entorno
-dotenv.config();
-
-/* // Configurar Firebase
-const serviceAccount = JSON.parse(
-  await fs.promises.readFile(process.env.FIREBASE_KEY_PATH, 'utf-8')
-); */
 
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUT);
 
