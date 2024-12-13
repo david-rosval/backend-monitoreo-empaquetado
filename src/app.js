@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 app.get('/registros', async (req, res) => {
   try {
     await connectDb()
-    const registeredPackageQuery = RegisteredPackage.find()
+    const registeredPackageQuery = RegisteredPackage.find().sort({ createdAt: -1 }) 
     const registeredPackages = await registeredPackageQuery.exec()
     res.json(registeredPackages)
   } catch (error) {
